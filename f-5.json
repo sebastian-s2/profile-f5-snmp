@@ -1,0 +1,1047 @@
+{
+  "name": "f5",
+  "target": {
+    "name": "f5",
+    "attributes": {
+      "profile": "f5",
+      "community": "public",
+      "version": "V2C",
+      "port": "161",
+      "v3username": null,
+      "v3contextname": null,
+      "v3seclevel": null,
+      "v3authprotocol": null,
+      "v3authpassword": null,
+      "v3privprotocol": null,
+      "v3privpassword": null,
+      "authprofiles": null
+    }
+  },
+  "subscriptions": [
+    {
+      "name": "interface",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "ifMib_ifXTable",
+          "attributes": null,
+          "values": {
+            "ifAdminStatus": "1.3.6.1.2.1.2.2.1.7",
+            "ifDescr": "1.3.6.1.2.1.2.2.1.2",
+            "ifInDiscards": "1.3.6.1.2.1.2.2.1.13",
+            "ifInErrors": "1.3.6.1.2.1.2.2.1.14",
+            "ifHCInOctets": "1.3.6.1.2.1.31.1.1.1.6",
+            "ifIndex": "1.3.6.1.2.1.2.2.1.1",
+            "ifOperStatus": "1.3.6.1.2.1.2.2.1.8",
+            "ifOutDiscards": "1.3.6.1.2.1.2.2.1.19",
+            "ifOutErrors": "1.3.6.1.2.1.2.2.1.20",
+            "ifHCOutOctets": "1.3.6.1.2.1.31.1.1.1.10",
+            "ifHighSpeed": "1.3.6.1.2.1.31.1.1.1.15",
+            "ifName": "1.3.6.1.2.1.31.1.1.1.1",
+            "ifInUnknownProtos": "1.3.6.1.2.1.2.2.1.15",
+            "ifLastChange": "1.3.6.1.2.1.2.2.1.9"
+          }
+        }
+      ]
+    },
+    {
+      "name": "mib_system",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "mib_system",
+          "attributes": null,
+          "values": {
+            "sysDescr": "1.3.6.1.2.1.1.1",
+            "sysObjectID": "1.3.6.1.2.1.1.2",
+            "sysUpTime": "1.3.6.1.2.1.1.3",
+            "sysContact": "1.3.6.1.2.1.1.4",
+            "sysName": "1.3.6.1.2.1.1.5",
+            "sysLocation": "1.3.6.1.2.1.1.6",
+            "sysServices": "1.3.6.1.2.1.1.7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "bgpMib_bgpPeerTable",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "bgpMib_bgpPeerTable",
+          "attributes": null,
+          "values": {
+            "bgpPeerAdminStatus": "1.3.6.1.2.1.15.3.1.3",
+            "bgpPeerConnectRetryInterval": "1.3.6.1.2.1.15.3.1.17",
+            "bgpPeerFsmEstablishedTime": "1.3.6.1.2.1.15.3.1.16",
+            "bgpPeerFsmEstablishedTransitions": "1.3.6.1.2.1.15.3.1.15",
+            "bgpPeerHoldTime": "1.3.6.1.2.1.15.3.1.18",
+            "bgpPeerHoldTimeConfigured": "1.3.6.1.2.1.15.3.1.20",
+            "bgpPeerInTotalMessages": "1.3.6.1.2.1.15.3.1.12",
+            "bgpPeerInUpdateElapsedTime": "1.3.6.1.2.1.15.3.1.24",
+            "bgpPeerInUpdates": "1.3.6.1.2.1.15.3.1.10",
+            "bgpPeerKeepAlive": "1.3.6.1.2.1.15.3.1.19",
+            "bgpPeerKeepAliveConfigured": "1.3.6.1.2.1.15.3.1.21",
+            "bgpPeerLastError": "1.3.6.1.2.1.15.3.1.14",
+            "bgpPeerLocalAddr": "1.3.6.1.2.1.15.3.1.5",
+            "bgpPeerMinASOriginationInterval": "1.3.6.1.2.1.15.3.1.22",
+            "bgpPeerMinRouteAdvertisementInterval": "1.3.6.1.2.1.15.3.1.23",
+            "bgpPeerOutTotalMessages": "1.3.6.1.2.1.15.3.1.13",
+            "bgpPeerOutUpdates": "1.3.6.1.2.1.15.3.1.11",
+            "bgpPeerRemoteAddr": "1.3.6.1.2.1.15.3.1.7",
+            "bgpPeerRemoteAs": "1.3.6.1.2.1.15.3.1.9",
+            "bgpPeerState": "1.3.6.1.2.1.15.3.1.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "cpu",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "sysMultiHostCpu_sysMultiHostCpuTable",
+          "attributes": null,
+          "values": {
+            "sysMultiHostCpuSystem5m": "1.3.6.1.4.1.3375.2.1.7.5.2.1.35"
+          }
+        }
+      ]
+    },
+    {
+      "name": "memory",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "cpmCPU_cpmCPUTotalTable",
+          "attributes": null,
+          "values": {
+            "memTotalReal": "1.3.6.1.4.1.3375.2.1.1.2.1.44",
+            "memAvailReal": "1.3.6.1.4.1.3375.2.1.1.2.1.45"
+          }
+        }
+      ]
+    },
+    {
+      "name": "entity_list",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "entityMIB_entityPhysical",
+          "attributes": null,
+          "values": {
+            "entity_physical_index": "1.3.6.1.2.1.47.1.1.1.1.1",
+            "entity_mfg": "1.3.6.1.2.1.47.1.1.1.1.12",
+            "entity_description": "1.3.6.1.2.1.47.1.1.1.1.2",
+            "entity_serial_number": "1.3.6.1.2.1.47.1.1.1.1.11",
+            "entity_name": "1.3.6.1.2.1.47.1.1.1.1.7",
+            "entity_model_name": "1.3.6.1.2.1.47.1.1.1.1.13"
+          }
+        }
+      ]
+    },
+    {
+      "name": "lldp",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "F5BigipSystemMib_sysLldpNeighborsTableTable",
+          "attributes": null,
+          "values": {
+            "sysLldpNeighborsTablePortId": "1.3.6.1.4.1.3375.2.1.2.16.1.2.1.2",
+            "sysLldpNeighborsTableLocalInterface": "1.3.6.1.4.1.3375.2.1.2.16.1.2.1.3",
+            "sysLldpNeighborsTablePortDesc": "1.3.6.1.4.1.3375.2.1.2.16.1.2.1.4",
+            "sysLldpNeighborsTableSysName": "1.3.6.1.4.1.3375.2.1.2.16.1.2.1.5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ipmib_ipaddresstable",
+      "attributes": {
+        "poll_interval": "240"
+      },
+      "groups": [
+        {
+          "name": "ipMib_ipAddrTable",
+          "attributes": null,
+          "values": {
+            "ipAdEntAddr": "1.3.6.1.2.1.4.20.1.1",
+            "ipAdEntIfIndex": "1.3.6.1.2.1.4.20.1.2"
+          }
+        },
+        {
+          "name": "ipMib_ipAddressTable",
+          "attributes": null,
+          "values": {
+            "ipAddressIfIndex": "1.3.6.1.2.1.4.34.1.3",
+            "ipAddressType": "1.3.6.1.2.1.4.34.1.4",
+            "ipAddressAddr": "1.3.6.1.2.1.4.34.1.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "env",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "F5BigipSystemMib_sysChassisFanTable",
+          "attributes": null,
+          "values": {
+            "sysChassisFanStatus": "1.3.6.1.4.1.3375.2.1.3.2.1.2.1.2",
+            "sysChassisFanIndex": "1.3.6.1.4.1.3375.2.1.3.2.1.2.1.1"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_sysChassisPowerSupplyTable",
+          "attributes": null,
+          "values": {
+            "sysChassisPowerSupplyStatus": "1.3.6.1.4.1.3375.2.1.3.2.2.2.1.2",
+            "sysChassisPowerSupplyIndex": "1.3.6.1.4.1.3375.2.1.3.2.2.2.1.1"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_sysChassisTempTable",
+          "attributes": null,
+          "values": {
+            "sysChassisTempTemperature": "1.3.6.1.4.1.3375.2.1.3.2.3.2.1.2",
+            "sysChassisTempIndex": "1.3.6.1.4.1.3375.2.1.3.2.3.2.1.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ha",
+      "attributes": {
+        "poll_interval": "300"
+      },
+      "groups": [
+        {
+          "name": "sysCM_sysCmSyncStatus",
+          "attributes": null,
+          "values": {
+            "sysCmSyncStatusId": "1.3.6.1.4.1.3375.2.1.14.1.1",
+            "sysCmSyncStatusStatus": "1.3.6.1.4.1.3375.2.1.14.1.2",
+            "sysCmSyncStatusColor": "1.3.6.1.4.1.3375.2.1.14.1.3",
+            "sysCmSyncStatusSummary": "1.3.6.1.4.1.3375.2.1.14.1.4"
+          }
+        },
+        {
+          "name": "sysCM_sysCmFailoverStatus",
+          "attributes": null,
+          "values": {
+            "sysCmFailoverStatusId": "1.3.6.1.4.1.3375.2.1.14.3.1",
+            "sysCmFailoverStatusStatus": "1.3.6.1.4.1.3375.2.1.14.3.2",
+            "sysCmFailoverStatusColor": "1.3.6.1.4.1.3375.2.1.14.3.3",
+            "sysCmFailoverStatusSummary": "1.3.6.1.4.1.3375.2.1.14.3.4",
+            "sysCmSyncStatusId": "1.3.6.1.4.1.3375.2.1.14.1.1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "vcmp",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "F5BigipSystemMib_sysVcmpEntry",
+          "attributes": null,
+          "values": {
+            "sysVcmpHostname": "1.3.6.1.4.1.3375.2.1.13.1.2.1.2",
+            "sysVcmpState": "1.3.6.1.4.1.3375.2.1.13.1.2.1.4",
+            "sysVcmpVcmpName": "1.3.6.1.4.1.3375.2.1.13.1.2.1.1",
+            "sysVcmpSlots": "1.3.6.1.4.1.3375.2.1.13.1.2.1.3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "virtuals",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "F5BigipLocalMib_ltmNodeAddrStatusAvailState",
+          "attributes": null,
+          "values": {
+            "ltmNodeAddrStatusAvailState": "1.3.6.1.4.1.3375.2.2.4.3.2.1.3",
+            "ltmNodeAddrStatusEnabledState": "1.3.6.1.4.1.3375.2.2.4.3.2.1.4",
+            "ltmNodeAddrStatusName": "1.3.6.1.4.1.3375.2.2.4.3.2.1.7",
+            "ltmNodeAddrStatusAddr": "1.3.6.1.4.1.3375.2.2.4.3.2.1.2",
+            "ltmNodeAddrStatusAddrType": "1.3.6.1.4.1.3375.2.2.4.3.2.1.1"
+          }
+        },
+        {
+          "name": "F5BigipLocalMib_ltmPoolMbrStatusTable",
+          "attributes": null,
+          "values": {
+            "ltmPoolMbrStatusAvailState": "1.3.6.1.4.1.3375.2.2.5.6.2.1.5",
+            "ltmPoolMbrStatusEnabledState": "1.3.6.1.4.1.3375.2.2.5.6.2.1.6",
+            "ltmPoolMbrStatusNodeName": "1.3.6.1.4.1.3375.2.2.5.6.2.1.9",
+            "ltmPoolMbrStatusParentType": "1.3.6.1.4.1.3375.2.2.5.6.2.1.7",
+            "ltmPoolMbrStatusPort": "1.3.6.1.4.1.3375.2.2.5.6.2.1.4",
+            "ltmPoolMbrStatusPoolName": "1.3.6.1.4.1.3375.2.2.5.6.2.1.1",
+            "ltmPoolMbrStatusAddr": "1.3.6.1.4.1.3375.2.2.5.6.2.1.3",
+            "ltmPoolMbrStatusAddrType": "1.3.6.1.4.1.3375.2.2.5.6.2.1.2"
+          }
+        },
+        {
+          "name": "F5BigipLocalMib_ltmPoolStatusTable",
+          "attributes": null,
+          "values": {
+            "ltmPoolStatusAvailState": "1.3.6.1.4.1.3375.2.2.5.5.2.1.2",
+            "ltmPoolStatusEnabledState": "1.3.6.1.4.1.3375.2.2.5.5.2.1.3",
+            "ltmPoolStatusName": "1.3.6.1.4.1.3375.2.2.5.5.2.1.1"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualAddrEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualAddrAddrType": "1.3.6.1.4.1.3375.2.2.10.10.2.1.1",
+            "ltmVirtualAddrName": "1.3.6.1.4.1.3375.2.2.10.10.2.1.15",
+            "ltmVirtualAddrAddr": "1.3.6.1.4.1.3375.2.2.10.10.2.1.2"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualServPoolEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServPoolVirtualServerName": "1.3.6.1.4.1.3375.2.2.10.6.2.1.1",
+            "ltmVirtualServPoolPoolName": "1.3.6.1.4.1.3375.2.2.10.6.2.1.2",
+            "ltmVirtualServPoolTable": "1.3.6.1.4.1.3375.2.2.10.6.2"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualServRuleEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServRuleVirtualServerName": "1.3.6.1.4.1.3375.2.2.10.8.2.1.1",
+            "ltmVirtualServRuleRuleName": "1.3.6.1.4.1.3375.2.2.10.8.2.1.2"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmPoolMemberEntry",
+          "attributes": null,
+          "values": {
+            "ltmPoolMemberPoolName": "1.3.6.1.4.1.3375.2.2.5.3.2.1.1",
+            "ltmPoolMemberMonitorStatus": "1.3.6.1.4.1.3375.2.2.5.3.2.1.11",
+            "ltmPoolMemberNodeName": "1.3.6.1.4.1.3375.2.2.5.3.2.1.19",
+            "ltmPoolMemberAddrType": "1.3.6.1.4.1.3375.2.2.5.3.2.1.2",
+            "ltmPoolMemberAddr": "1.3.6.1.4.1.3375.2.2.5.3.2.1.3",
+            "ltmPoolMemberPort": "1.3.6.1.4.1.3375.2.2.5.3.2.1.4"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualServProfileEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServProfileVsName": "1.3.6.1.4.1.3375.2.2.10.5.2.1.1",
+            "ltmVirtualServProfileProfileName": "1.3.6.1.4.1.3375.2.2.10.5.2.1.2",
+            "ltmVirtualServProfileType": "1.3.6.1.4.1.3375.2.2.10.5.2.1.3",
+            "ltmVirtualServProfileContext": "1.3.6.1.4.1.3375.2.2.10.5.2.1.4"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVsStatusEntry",
+          "attributes": null,
+          "values": {
+            "ltmVsStatusName": "1.3.6.1.4.1.3375.2.2.10.13.2.1.1",
+            "ltmVsStatusAvailState": "1.3.6.1.4.1.3375.2.2.10.13.2.1.2",
+            "ltmVsStatusEnabledState": "1.3.6.1.4.1.3375.2.2.10.13.2.1.3"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVAddrStatusEntry",
+          "attributes": null,
+          "values": {
+            "ltmVAddrStatusAddrType": "1.3.6.1.4.1.3375.2.2.10.14.2.1.1",
+            "ltmVAddrStatusAddr": "1.3.6.1.4.1.3375.2.2.10.14.2.1.2",
+            "ltmVAddrStatusAvailState": "1.3.6.1.4.1.3375.2.2.10.14.2.1.3",
+            "ltmVAddrStatusEnabledState": "1.3.6.1.4.1.3375.2.2.10.14.2.1.4",
+            "ltmVAddrStatusName": "1.3.6.1.4.1.3375.2.2.10.14.2.1.7"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualServStatEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServStatName": "1.3.6.1.4.1.3375.2.2.10.2.3.1.1",
+            "ltmVirtualServStatClientCurConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.12",
+            "ltmVirtualServStatClientBytesIn": "1.3.6.1.4.1.3375.2.2.10.2.3.1.7",
+            "ltmVirtualServStatClientBytesOut": "1.3.6.1.4.1.3375.2.2.10.2.3.1.8"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualAddrStatEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualAddrStatName": "1.3.6.1.4.1.3375.2.2.10.11.3.1.19",
+            "ltmVirtualAddrStatClientCurConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.9",
+            "ltmVirtualAddrStatClientBytesIn": "1.3.6.1.4.1.3375.2.2.10.11.3.1.4",
+            "ltmVirtualAddrStatClientBytesOut": "1.3.6.1.4.1.3375.2.2.10.11.3.1.5"
+          }
+        },
+        {
+          "name": "F5BigipSystemMib_ltmVirtualServEntry",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServName": "1.3.6.1.4.1.3375.2.2.10.1.2.1.1",
+            "ltmVirtualServAddr": "1.3.6.1.4.1.3375.2.2.10.1.2.1.3",
+            "ltmVirtualServPort": "1.3.6.1.4.1.3375.2.2.10.1.2.1.6",
+            "ltmVirtualServVaName": "1.3.6.1.4.1.3375.2.2.10.1.2.1.29"
+          }
+        }
+      ]
+    },
+    {
+      "name": "os_version",
+      "attributes": {
+        "poll_interval": "300"
+      },
+      "groups": [
+        {
+          "name": "F5BigipLocalMib_sysSystem",
+          "attributes": null,
+          "values": {
+            "sysSystemRelease": "1.3.6.1.4.1.3375.2.1.6.3",
+            "sysSystemVersion": "1.3.6.1.4.1.3375.2.1.6.4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "f5ltm_detailed",
+      "attributes": {
+        "poll_interval": "120"
+      },
+      "groups": [
+        {
+          "name": "F5BigipLocal_VirtualServerStats",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServStatName": "1.3.6.1.4.1.3375.2.2.10.2.3.1.1",
+            "ltmVirtualServStatClientPktsIn": "1.3.6.1.4.1.3375.2.2.10.2.3.1.2",
+            "ltmVirtualServStatClientBytesIn": "1.3.6.1.4.1.3375.2.2.10.2.3.1.7",
+            "ltmVirtualServStatClientPktsOut": "1.3.6.1.4.1.3375.2.2.10.2.3.1.3",
+            "ltmVirtualServStatClientBytesOut": "1.3.6.1.4.1.3375.2.2.10.2.3.1.8",
+            "ltmVirtualServStatClientMaxConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.11",
+            "ltmVirtualServStatClientCurConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.12",
+            "ltmVirtualServStatClientTotConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.13",
+            "ltmVirtualServStatPvaPktsIn": "1.3.6.1.4.1.3375.2.2.10.2.3.1.4",
+            "ltmVirtualServStatPvaBytesIn": "1.3.6.1.4.1.3375.2.2.10.2.3.1.9",
+            "ltmVirtualServStatPvaPktsOut": "1.3.6.1.4.1.3375.2.2.10.2.3.1.5",
+            "ltmVirtualServStatPvaBytesOut": "1.3.6.1.4.1.3375.2.2.10.2.3.1.10",
+            "ltmVirtualServStatPvaMaxConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.14",
+            "ltmVirtualServStatPvaCurConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.15",
+            "ltmVirtualServStatPvaTotConns": "1.3.6.1.4.1.3375.2.2.10.2.3.1.16",
+            "ltmVirtualServStatTotRequests": "1.3.6.1.4.1.3375.2.2.10.2.3.1.17",
+            "ltmVirtualServStatNoNodesErrors": "1.3.6.1.4.1.3375.2.2.10.2.3.1.18"
+          }
+        },
+        {
+          "name": "F5BigipLocal_VirtualServerConfig",
+          "attributes": null,
+          "values": {
+            "ltmVirtualServName": "1.3.6.1.4.1.3375.2.2.10.1.2.1.1",
+            "ltmVirtualServAddrType": "1.3.6.1.4.1.3375.2.2.10.1.2.1.2",
+            "ltmVirtualServAddr": "1.3.6.1.4.1.3375.2.2.10.1.2.1.3",
+            "ltmVirtualServPort": "1.3.6.1.4.1.3375.2.2.10.1.2.1.6",
+            "ltmVirtualServEnabled": "1.3.6.1.4.1.3375.2.2.10.1.2.1.7",
+            "ltmVirtualServConnLimit": "1.3.6.1.4.1.3375.2.2.10.1.2.1.8",
+            "ltmVirtualServWildmask": "1.3.6.1.4.1.3375.2.2.10.1.2.1.9",
+            "ltmVirtualServIpProtocol": "1.3.6.1.4.1.3375.2.2.10.1.2.1.10",
+            "ltmVirtualServType": "1.3.6.1.4.1.3375.2.2.10.1.2.1.11",
+            "ltmVirtualServDefaultPool": "1.3.6.1.4.1.3375.2.2.10.1.2.1.12",
+            "ltmVirtualServPersistMethod": "1.3.6.1.4.1.3375.2.2.10.1.2.1.13",
+            "ltmVirtualServPersistTimeout": "1.3.6.1.4.1.3375.2.2.10.1.2.1.14",
+            "ltmVirtualServVaName": "1.3.6.1.4.1.3375.2.2.10.1.2.1.29"
+          }
+        },
+        {
+          "name": "F5BigipLocal_VirtualServerStatus",
+          "attributes": null,
+          "values": {
+            "ltmVsStatusName": "1.3.6.1.4.1.3375.2.2.10.13.2.1.1",
+            "ltmVsStatusAvailState": "1.3.6.1.4.1.3375.2.2.10.13.2.1.2",
+            "ltmVsStatusEnabledState": "1.3.6.1.4.1.3375.2.2.10.13.2.1.3",
+            "ltmVsStatusParentType": "1.3.6.1.4.1.3375.2.2.10.13.2.1.4",
+            "ltmVsStatusDetailReason": "1.3.6.1.4.1.3375.2.2.10.13.2.1.5"
+          }
+        },
+        {
+          "name": "F5BigipLocal_PoolStats",
+          "attributes": null,
+          "values": {
+            "ltmPoolStatName": "1.3.6.1.4.1.3375.2.2.5.1.3.1.1",
+            "ltmPoolStatServerPktsIn": "1.3.6.1.4.1.3375.2.2.5.1.3.1.2",
+            "ltmPoolStatServerBytesIn": "1.3.6.1.4.1.3375.2.2.5.1.3.1.7",
+            "ltmPoolStatServerPktsOut": "1.3.6.1.4.1.3375.2.2.5.1.3.1.3",
+            "ltmPoolStatServerBytesOut": "1.3.6.1.4.1.3375.2.2.5.1.3.1.8",
+            "ltmPoolStatServerMaxConns": "1.3.6.1.4.1.3375.2.2.5.1.3.1.11",
+            "ltmPoolStatServerCurConns": "1.3.6.1.4.1.3375.2.2.5.1.3.1.12",
+            "ltmPoolStatServerTotConns": "1.3.6.1.4.1.3375.2.2.5.1.3.1.13",
+            "ltmPoolStatTotRequests": "1.3.6.1.4.1.3375.2.2.5.1.3.1.17",
+            "ltmPoolStatCurSessions": "1.3.6.1.4.1.3375.2.2.5.1.3.1.18",
+            "ltmPoolStatActiveMemberCnt": "1.3.6.1.4.1.3375.2.2.5.1.3.1.19",
+            "ltmPoolStatConnqDepth": "1.3.6.1.4.1.3375.2.2.5.1.3.1.20",
+            "ltmPoolStatConnqAgeHead": "1.3.6.1.4.1.3375.2.2.5.1.3.1.21",
+            "ltmPoolStatConnqAgeMax": "1.3.6.1.4.1.3375.2.2.5.1.3.1.22",
+            "ltmPoolStatConnqAgeEma": "1.3.6.1.4.1.3375.2.2.5.1.3.1.23",
+            "ltmPoolStatConnqAgeEdm": "1.3.6.1.4.1.3375.2.2.5.1.3.1.24",
+            "ltmPoolStatConnqServiced": "1.3.6.1.4.1.3375.2.2.5.1.3.1.25",
+            "ltmPoolStatMinActiveMembers": "1.3.6.1.4.1.3375.2.2.5.1.3.1.26"
+          }
+        },
+        {
+          "name": "F5BigipLocal_PoolConfig",
+          "attributes": null,
+          "values": {
+            "ltmPoolName": "1.3.6.1.4.1.3375.2.2.5.1.2.1.1",
+            "ltmPoolLbMode": "1.3.6.1.4.1.3375.2.2.5.1.2.1.2",
+            "ltmPoolMinActiveMembers": "1.3.6.1.4.1.3375.2.2.5.1.2.1.3",
+            "ltmPoolActiveMemberCnt": "1.3.6.1.4.1.3375.2.2.5.1.2.1.4",
+            "ltmPoolMonitorRule": "1.3.6.1.4.1.3375.2.2.5.1.2.1.17",
+            "ltmPoolSlowRampTime": "1.3.6.1.4.1.3375.2.2.5.1.2.1.18",
+            "ltmPoolActionOnServiceDown": "1.3.6.1.4.1.3375.2.2.5.1.2.1.19",
+            "ltmPoolIgnorePersistedWeight": "1.3.6.1.4.1.3375.2.2.5.1.2.1.20",
+            "ltmPoolAllowNat": "1.3.6.1.4.1.3375.2.2.5.1.2.1.21",
+            "ltmPoolAllowSnat": "1.3.6.1.4.1.3375.2.2.5.1.2.1.22"
+          }
+        },
+        {
+          "name": "F5BigipLocal_PoolStatus",
+          "attributes": null,
+          "values": {
+            "ltmPoolStatusName": "1.3.6.1.4.1.3375.2.2.5.5.2.1.1",
+            "ltmPoolStatusAvailState": "1.3.6.1.4.1.3375.2.2.5.5.2.1.2",
+            "ltmPoolStatusEnabledState": "1.3.6.1.4.1.3375.2.2.5.5.2.1.3",
+            "ltmPoolStatusParentType": "1.3.6.1.4.1.3375.2.2.5.5.2.1.4",
+            "ltmPoolStatusDetailReason": "1.3.6.1.4.1.3375.2.2.5.5.2.1.5"
+          }
+        },
+        {
+          "name": "F5BigipLocal_PoolMemberStats",
+          "attributes": null,
+          "values": {
+            "ltmPoolMemberStatPoolName": "1.3.6.1.4.1.3375.2.2.5.4.3.1.1",
+            "ltmPoolMemberStatAddrType": "1.3.6.1.4.1.3375.2.2.5.4.3.1.2",
+            "ltmPoolMemberStatAddr": "1.3.6.1.4.1.3375.2.2.5.4.3.1.3",
+            "ltmPoolMemberStatPort": "1.3.6.1.4.1.3375.2.2.5.4.3.1.4",
+            "ltmPoolMemberStatServerPktsIn": "1.3.6.1.4.1.3375.2.2.5.4.3.1.5",
+            "ltmPoolMemberStatServerBytesIn": "1.3.6.1.4.1.3375.2.2.5.4.3.1.10",
+            "ltmPoolMemberStatServerPktsOut": "1.3.6.1.4.1.3375.2.2.5.4.3.1.6",
+            "ltmPoolMemberStatServerBytesOut": "1.3.6.1.4.1.3375.2.2.5.4.3.1.11",
+            "ltmPoolMemberStatServerMaxConns": "1.3.6.1.4.1.3375.2.2.5.4.3.1.14",
+            "ltmPoolMemberStatServerCurConns": "1.3.6.1.4.1.3375.2.2.5.4.3.1.15",
+            "ltmPoolMemberStatServerTotConns": "1.3.6.1.4.1.3375.2.2.5.4.3.1.16",
+            "ltmPoolMemberStatTotRequests": "1.3.6.1.4.1.3375.2.2.5.4.3.1.20",
+            "ltmPoolMemberStatCurSessions": "1.3.6.1.4.1.3375.2.2.5.4.3.1.21",
+            "ltmPoolMemberStatConnqDepth": "1.3.6.1.4.1.3375.2.2.5.4.3.1.23",
+            "ltmPoolMemberStatConnqAgeHead": "1.3.6.1.4.1.3375.2.2.5.4.3.1.24",
+            "ltmPoolMemberStatConnqAgeMax": "1.3.6.1.4.1.3375.2.2.5.4.3.1.25",
+            "ltmPoolMemberStatConnqServiced": "1.3.6.1.4.1.3375.2.2.5.4.3.1.28",
+            "ltmPoolMemberStatNodeName": "1.3.6.1.4.1.3375.2.2.5.4.3.1.19"
+          }
+        },
+        {
+          "name": "F5BigipLocal_PoolMemberConfig",
+          "attributes": null,
+          "values": {
+            "ltmPoolMemberPoolName": "1.3.6.1.4.1.3375.2.2.5.3.2.1.1",
+            "ltmPoolMemberAddrType": "1.3.6.1.4.1.3375.2.2.5.3.2.1.2",
+            "ltmPoolMemberAddr": "1.3.6.1.4.1.3375.2.2.5.3.2.1.3",
+            "ltmPoolMemberPort": "1.3.6.1.4.1.3375.2.2.5.3.2.1.4",
+            "ltmPoolMemberRatio": "1.3.6.1.4.1.3375.2.2.5.3.2.1.5",
+            "ltmPoolMemberWeight": "1.3.6.1.4.1.3375.2.2.5.3.2.1.6",
+            "ltmPoolMemberPriority": "1.3.6.1.4.1.3375.2.2.5.3.2.1.7",
+            "ltmPoolMemberEnabled": "1.3.6.1.4.1.3375.2.2.5.3.2.1.8",
+            "ltmPoolMemberConnLimit": "1.3.6.1.4.1.3375.2.2.5.3.2.1.9",
+            "ltmPoolMemberRateLimit": "1.3.6.1.4.1.3375.2.2.5.3.2.1.10",
+            "ltmPoolMemberMonitorStatus": "1.3.6.1.4.1.3375.2.2.5.3.2.1.11",
+            "ltmPoolMemberMonitorRule": "1.3.6.1.4.1.3375.2.2.5.3.2.1.12",
+            "ltmPoolMemberSessionStatus": "1.3.6.1.4.1.3375.2.2.5.3.2.1.13",
+            "ltmPoolMemberNodeName": "1.3.6.1.4.1.3375.2.2.5.3.2.1.19"
+          }
+        },
+        {
+          "name": "F5BigipLocal_PoolMemberStatus",
+          "attributes": null,
+          "values": {
+            "ltmPoolMbrStatusPoolName": "1.3.6.1.4.1.3375.2.2.5.6.2.1.1",
+            "ltmPoolMbrStatusAddrType": "1.3.6.1.4.1.3375.2.2.5.6.2.1.2",
+            "ltmPoolMbrStatusAddr": "1.3.6.1.4.1.3375.2.2.5.6.2.1.3",
+            "ltmPoolMbrStatusPort": "1.3.6.1.4.1.3375.2.2.5.6.2.1.4",
+            "ltmPoolMbrStatusAvailState": "1.3.6.1.4.1.3375.2.2.5.6.2.1.5",
+            "ltmPoolMbrStatusEnabledState": "1.3.6.1.4.1.3375.2.2.5.6.2.1.6",
+            "ltmPoolMbrStatusParentType": "1.3.6.1.4.1.3375.2.2.5.6.2.1.7",
+            "ltmPoolMbrStatusDetailReason": "1.3.6.1.4.1.3375.2.2.5.6.2.1.8",
+            "ltmPoolMbrStatusNodeName": "1.3.6.1.4.1.3375.2.2.5.6.2.1.9"
+          }
+        },
+        {
+          "name": "F5BigipLocal_NodeAddrStats",
+          "attributes": null,
+          "values": {
+            "ltmNodeAddrStatAddrType": "1.3.6.1.4.1.3375.2.2.4.2.3.1.1",
+            "ltmNodeAddrStatAddr": "1.3.6.1.4.1.3375.2.2.4.2.3.1.2",
+            "ltmNodeAddrStatServerPktsIn": "1.3.6.1.4.1.3375.2.2.4.2.3.1.3",
+            "ltmNodeAddrStatServerBytesIn": "1.3.6.1.4.1.3375.2.2.4.2.3.1.8",
+            "ltmNodeAddrStatServerPktsOut": "1.3.6.1.4.1.3375.2.2.4.2.3.1.4",
+            "ltmNodeAddrStatServerBytesOut": "1.3.6.1.4.1.3375.2.2.4.2.3.1.9",
+            "ltmNodeAddrStatServerMaxConns": "1.3.6.1.4.1.3375.2.2.4.2.3.1.12",
+            "ltmNodeAddrStatServerCurConns": "1.3.6.1.4.1.3375.2.2.4.2.3.1.13",
+            "ltmNodeAddrStatServerTotConns": "1.3.6.1.4.1.3375.2.2.4.2.3.1.14",
+            "ltmNodeAddrStatTotRequests": "1.3.6.1.4.1.3375.2.2.4.2.3.1.18",
+            "ltmNodeAddrStatCurSessions": "1.3.6.1.4.1.3375.2.2.4.2.3.1.19",
+            "ltmNodeAddrStatName": "1.3.6.1.4.1.3375.2.2.4.2.3.1.17"
+          }
+        },
+        {
+          "name": "F5BigipLocal_NodeAddrConfig",
+          "attributes": null,
+          "values": {
+            "ltmNodeAddrAddrType": "1.3.6.1.4.1.3375.2.2.4.1.2.1.1",
+            "ltmNodeAddrAddr": "1.3.6.1.4.1.3375.2.2.4.1.2.1.2",
+            "ltmNodeAddrEnabled": "1.3.6.1.4.1.3375.2.2.4.1.2.1.3",
+            "ltmNodeAddrConnLimit": "1.3.6.1.4.1.3375.2.2.4.1.2.1.4",
+            "ltmNodeAddrRateLimit": "1.3.6.1.4.1.3375.2.2.4.1.2.1.5",
+            "ltmNodeAddrRatio": "1.3.6.1.4.1.3375.2.2.4.1.2.1.6",
+            "ltmNodeAddrDynamicRatio": "1.3.6.1.4.1.3375.2.2.4.1.2.1.7",
+            "ltmNodeAddrMonitorRule": "1.3.6.1.4.1.3375.2.2.4.1.2.1.8",
+            "ltmNodeAddrMonitorStatus": "1.3.6.1.4.1.3375.2.2.4.1.2.1.9",
+            "ltmNodeAddrSessionStatus": "1.3.6.1.4.1.3375.2.2.4.1.2.1.10",
+            "ltmNodeAddrName": "1.3.6.1.4.1.3375.2.2.4.1.2.1.14"
+          }
+        },
+        {
+          "name": "F5BigipLocal_NodeAddrStatus",
+          "attributes": null,
+          "values": {
+            "ltmNodeAddrStatusAddrType": "1.3.6.1.4.1.3375.2.2.4.3.2.1.1",
+            "ltmNodeAddrStatusAddr": "1.3.6.1.4.1.3375.2.2.4.3.2.1.2",
+            "ltmNodeAddrStatusAvailState": "1.3.6.1.4.1.3375.2.2.4.3.2.1.3",
+            "ltmNodeAddrStatusEnabledState": "1.3.6.1.4.1.3375.2.2.4.3.2.1.4",
+            "ltmNodeAddrStatusParentType": "1.3.6.1.4.1.3375.2.2.4.3.2.1.5",
+            "ltmNodeAddrStatusDetailReason": "1.3.6.1.4.1.3375.2.2.4.3.2.1.6",
+            "ltmNodeAddrStatusName": "1.3.6.1.4.1.3375.2.2.4.3.2.1.7"
+          }
+        },
+        {
+          "name": "F5BigipLocal_SSLCertStats",
+          "attributes": null,
+          "values": {
+            "ltmSslCertName": "1.3.6.1.4.1.3375.2.2.6.1.2.1.1",
+            "ltmSslCertKeyType": "1.3.6.1.4.1.3375.2.2.6.1.2.1.2",
+            "ltmSslCertKeySize": "1.3.6.1.4.1.3375.2.2.6.1.2.1.3",
+            "ltmSslCertSecurityType": "1.3.6.1.4.1.3375.2.2.6.1.2.1.4",
+            "ltmSslCertSerialNumber": "1.3.6.1.4.1.3375.2.2.6.1.2.1.5",
+            "ltmSslCertCreateTime": "1.3.6.1.4.1.3375.2.2.6.1.2.1.6",
+            "ltmSslCertCreateUser": "1.3.6.1.4.1.3375.2.2.6.1.2.1.7",
+            "ltmSslCertChecksum": "1.3.6.1.4.1.3375.2.2.6.1.2.1.8",
+            "ltmSslCertSubject": "1.3.6.1.4.1.3375.2.2.6.1.2.1.9",
+            "ltmSslCertIssuer": "1.3.6.1.4.1.3375.2.2.6.1.2.1.10",
+            "ltmSslCertNotBefore": "1.3.6.1.4.1.3375.2.2.6.1.2.1.11",
+            "ltmSslCertNotAfter": "1.3.6.1.4.1.3375.2.2.6.1.2.1.12",
+            "ltmSslCertVersion": "1.3.6.1.4.1.3375.2.2.6.1.2.1.13"
+          }
+        },
+        {
+          "name": "F5BigipLocal_SSLKeyStats",
+          "attributes": null,
+          "values": {
+            "ltmSslKeyName": "1.3.6.1.4.1.3375.2.2.6.2.2.1.1",
+            "ltmSslKeyKeyType": "1.3.6.1.4.1.3375.2.2.6.2.2.1.2",
+            "ltmSslKeyKeySize": "1.3.6.1.4.1.3375.2.2.6.2.2.1.3",
+            "ltmSslKeySecurityType": "1.3.6.1.4.1.3375.2.2.6.2.2.1.4",
+            "ltmSslKeyCreateTime": "1.3.6.1.4.1.3375.2.2.6.2.2.1.5",
+            "ltmSslKeyCreateUser": "1.3.6.1.4.1.3375.2.2.6.2.2.1.6",
+            "ltmSslKeyChecksum": "1.3.6.1.4.1.3375.2.2.6.2.2.1.7"
+          }
+        },
+        {
+          "name": "F5BigipLocal_ProfileClientSSLStats",
+          "attributes": null,
+          "values": {
+            "ltmClientSslStatName": "1.3.6.1.4.1.3375.2.2.6.5.3.1.1",
+            "ltmClientSslStatCurConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.2",
+            "ltmClientSslStatMaxConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.3",
+            "ltmClientSslStatCurNativeConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.4",
+            "ltmClientSslStatMaxNativeConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.5",
+            "ltmClientSslStatTotNativeConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.6",
+            "ltmClientSslStatCurCompatConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.7",
+            "ltmClientSslStatMaxCompatConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.8",
+            "ltmClientSslStatTotCompatConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.9",
+            "ltmClientSslStatEncryptedBytesIn": "1.3.6.1.4.1.3375.2.2.6.5.3.1.10",
+            "ltmClientSslStatEncryptedBytesOut": "1.3.6.1.4.1.3375.2.2.6.5.3.1.11",
+            "ltmClientSslStatDecryptedBytesIn": "1.3.6.1.4.1.3375.2.2.6.5.3.1.12",
+            "ltmClientSslStatDecryptedBytesOut": "1.3.6.1.4.1.3375.2.2.6.5.3.1.13",
+            "ltmClientSslStatRecordsIn": "1.3.6.1.4.1.3375.2.2.6.5.3.1.14",
+            "ltmClientSslStatRecordsOut": "1.3.6.1.4.1.3375.2.2.6.5.3.1.15",
+            "ltmClientSslStatFullyHwAcceleratedConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.16",
+            "ltmClientSslStatPartiallyHwAcceleratedConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.17",
+            "ltmClientSslStatNonHwAcceleratedConns": "1.3.6.1.4.1.3375.2.2.6.5.3.1.18",
+            "ltmClientSslStatPrematureDisconnects": "1.3.6.1.4.1.3375.2.2.6.5.3.1.19",
+            "ltmClientSslStatMidstreamRenegotiations": "1.3.6.1.4.1.3375.2.2.6.5.3.1.20",
+            "ltmClientSslStatSessCacheCurEntries": "1.3.6.1.4.1.3375.2.2.6.5.3.1.21",
+            "ltmClientSslStatSessCacheHits": "1.3.6.1.4.1.3375.2.2.6.5.3.1.22",
+            "ltmClientSslStatSessCacheLookups": "1.3.6.1.4.1.3375.2.2.6.5.3.1.23",
+            "ltmClientSslStatSessCacheOverflows": "1.3.6.1.4.1.3375.2.2.6.5.3.1.24"
+          }
+        },
+        {
+          "name": "F5BigipLocal_ProfileServerSSLStats",
+          "attributes": null,
+          "values": {
+            "ltmServerSslStatName": "1.3.6.1.4.1.3375.2.2.6.6.3.1.1",
+            "ltmServerSslStatCurConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.2",
+            "ltmServerSslStatMaxConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.3",
+            "ltmServerSslStatCurNativeConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.4",
+            "ltmServerSslStatMaxNativeConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.5",
+            "ltmServerSslStatTotNativeConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.6",
+            "ltmServerSslStatCurCompatConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.7",
+            "ltmServerSslStatMaxCompatConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.8",
+            "ltmServerSslStatTotCompatConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.9",
+            "ltmServerSslStatEncryptedBytesIn": "1.3.6.1.4.1.3375.2.2.6.6.3.1.10",
+            "ltmServerSslStatEncryptedBytesOut": "1.3.6.1.4.1.3375.2.2.6.6.3.1.11",
+            "ltmServerSslStatDecryptedBytesIn": "1.3.6.1.4.1.3375.2.2.6.6.3.1.12",
+            "ltmServerSslStatDecryptedBytesOut": "1.3.6.1.4.1.3375.2.2.6.6.3.1.13",
+            "ltmServerSslStatRecordsIn": "1.3.6.1.4.1.3375.2.2.6.6.3.1.14",
+            "ltmServerSslStatRecordsOut": "1.3.6.1.4.1.3375.2.2.6.6.3.1.15",
+            "ltmServerSslStatFullyHwAcceleratedConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.16",
+            "ltmServerSslStatPartiallyHwAcceleratedConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.17",
+            "ltmServerSslStatNonHwAcceleratedConns": "1.3.6.1.4.1.3375.2.2.6.6.3.1.18",
+            "ltmServerSslStatPrematureDisconnects": "1.3.6.1.4.1.3375.2.2.6.6.3.1.19",
+            "ltmServerSslStatMidstreamRenegotiations": "1.3.6.1.4.1.3375.2.2.6.6.3.1.20",
+            "ltmServerSslStatSessCacheCurEntries": "1.3.6.1.4.1.3375.2.2.6.6.3.1.21",
+            "ltmServerSslStatSessCacheHits": "1.3.6.1.4.1.3375.2.2.6.6.3.1.22",
+            "ltmServerSslStatSessCacheLookups": "1.3.6.1.4.1.3375.2.2.6.6.3.1.23",
+            "ltmServerSslStatSessCacheOverflows": "1.3.6.1.4.1.3375.2.2.6.6.3.1.24"
+          }
+        },
+        {
+          "name": "F5BigipLocal_ProfileHTTPStats",
+          "attributes": null,
+          "values": {
+            "ltmHttpStatName": "1.3.6.1.4.1.3375.2.2.6.7.3.1.1",
+            "ltmHttpStatGetReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.2",
+            "ltmHttpStatHeadReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.3",
+            "ltmHttpStatPostReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.4",
+            "ltmHttpStatDeleteReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.5",
+            "ltmHttpStatPutReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.6",
+            "ltmHttpStatConnectReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.7",
+            "ltmHttpStatTraceReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.8",
+            "ltmHttpStatOptionsReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.9",
+            "ltmHttpStatOtherReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.10",
+            "ltmHttpStatTotalReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.11",
+            "ltmHttpStat2xxResp": "1.3.6.1.4.1.3375.2.2.6.7.3.1.12",
+            "ltmHttpStat3xxResp": "1.3.6.1.4.1.3375.2.2.6.7.3.1.13",
+            "ltmHttpStat4xxResp": "1.3.6.1.4.1.3375.2.2.6.7.3.1.14",
+            "ltmHttpStat5xxResp": "1.3.6.1.4.1.3375.2.2.6.7.3.1.15",
+            "ltmHttpStatTotalResp": "1.3.6.1.4.1.3375.2.2.6.7.3.1.16",
+            "ltmHttpStatNumberReqs": "1.3.6.1.4.1.3375.2.2.6.7.3.1.17",
+            "ltmHttpStatMaxKeepaliveReq": "1.3.6.1.4.1.3375.2.2.6.7.3.1.18",
+            "ltmHttpStatPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.19",
+            "ltmHttpStatPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.20",
+            "ltmHttpStatNullCompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.21",
+            "ltmHttpStatHtmlPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.22",
+            "ltmHttpStatHtmlPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.23",
+            "ltmHttpStatCssPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.24",
+            "ltmHttpStatCssPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.25",
+            "ltmHttpStatJsPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.26",
+            "ltmHttpStatJsPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.27",
+            "ltmHttpStatXmlPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.28",
+            "ltmHttpStatXmlPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.29",
+            "ltmHttpStatSgmlPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.30",
+            "ltmHttpStatSgmlPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.31",
+            "ltmHttpStatPlainPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.32",
+            "ltmHttpStatPlainPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.33",
+            "ltmHttpStatOctetPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.34",
+            "ltmHttpStatOctetPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.35",
+            "ltmHttpStatImagePrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.36",
+            "ltmHttpStatImagePostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.37",
+            "ltmHttpStatVideoPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.38",
+            "ltmHttpStatVideoPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.39",
+            "ltmHttpStatAudioPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.40",
+            "ltmHttpStatAudioPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.41",
+            "ltmHttpStatOtherPrecompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.42",
+            "ltmHttpStatOtherPostcompressBytes": "1.3.6.1.4.1.3375.2.2.6.7.3.1.43"
+          }
+        },
+        {
+          "name": "F5BigipLocal_ProfileTCPStats",
+          "attributes": null,
+          "values": {
+            "ltmTcpStatName": "1.3.6.1.4.1.3375.2.2.6.8.3.1.1",
+            "ltmTcpStatAccepts": "1.3.6.1.4.1.3375.2.2.6.8.3.1.2",
+            "ltmTcpStatAcceptfails": "1.3.6.1.4.1.3375.2.2.6.8.3.1.3",
+            "ltmTcpStatConnects": "1.3.6.1.4.1.3375.2.2.6.8.3.1.4",
+            "ltmTcpStatConnfails": "1.3.6.1.4.1.3375.2.2.6.8.3.1.5",
+            "ltmTcpStatExpires": "1.3.6.1.4.1.3375.2.2.6.8.3.1.6",
+            "ltmTcpStatAbandons": "1.3.6.1.4.1.3375.2.2.6.8.3.1.7",
+            "ltmTcpStatRxrst": "1.3.6.1.4.1.3375.2.2.6.8.3.1.8",
+            "ltmTcpStatRxbadsum": "1.3.6.1.4.1.3375.2.2.6.8.3.1.9",
+            "ltmTcpStatRxbadseg": "1.3.6.1.4.1.3375.2.2.6.8.3.1.10",
+            "ltmTcpStatRxooseg": "1.3.6.1.4.1.3375.2.2.6.8.3.1.11",
+            "ltmTcpStatRxcookie": "1.3.6.1.4.1.3375.2.2.6.8.3.1.12",
+            "ltmTcpStatRxbadcookie": "1.3.6.1.4.1.3375.2.2.6.8.3.1.13",
+            "ltmTcpStatSyncacheerr": "1.3.6.1.4.1.3375.2.2.6.8.3.1.14",
+            "ltmTcpStatTxrst": "1.3.6.1.4.1.3375.2.2.6.8.3.1.15",
+            "ltmTcpStatTxcookie": "1.3.6.1.4.1.3375.2.2.6.8.3.1.16",
+            "ltmTcpStatTxbadsum": "1.3.6.1.4.1.3375.2.2.6.8.3.1.17",
+            "ltmTcpStatOpen": "1.3.6.1.4.1.3375.2.2.6.8.3.1.18",
+            "ltmTcpStatCloseWait": "1.3.6.1.4.1.3375.2.2.6.8.3.1.19",
+            "ltmTcpStatFinWait": "1.3.6.1.4.1.3375.2.2.6.8.3.1.20",
+            "ltmTcpStatTimeWait": "1.3.6.1.4.1.3375.2.2.6.8.3.1.21"
+          }
+        },
+        {
+          "name": "F5BigipLocal_ProfileOneConnectStats",
+          "attributes": null,
+          "values": {
+            "ltmOneConnectStatName": "1.3.6.1.4.1.3375.2.2.6.9.3.1.1",
+            "ltmOneConnectStatCurEntries": "1.3.6.1.4.1.3375.2.2.6.9.3.1.2",
+            "ltmOneConnectStatMaxEntries": "1.3.6.1.4.1.3375.2.2.6.9.3.1.3",
+            "ltmOneConnectStatTotEntries": "1.3.6.1.4.1.3375.2.2.6.9.3.1.4",
+            "ltmOneConnectStatCurConns": "1.3.6.1.4.1.3375.2.2.6.9.3.1.5",
+            "ltmOneConnectStatMaxConns": "1.3.6.1.4.1.3375.2.2.6.9.3.1.6",
+            "ltmOneConnectStatTotConns": "1.3.6.1.4.1.3375.2.2.6.9.3.1.7",
+            "ltmOneConnectStatCurReuses": "1.3.6.1.4.1.3375.2.2.6.9.3.1.8",
+            "ltmOneConnectStatMaxReuses": "1.3.6.1.4.1.3375.2.2.6.9.3.1.9",
+            "ltmOneConnectStatTotReuses": "1.3.6.1.4.1.3375.2.2.6.9.3.1.10"
+          }
+        },
+        {
+          "name": "F5BigipLocal_VirtualAddrStats",
+          "attributes": null,
+          "values": {
+            "ltmVirtualAddrStatAddrType": "1.3.6.1.4.1.3375.2.2.10.11.3.1.1",
+            "ltmVirtualAddrStatAddr": "1.3.6.1.4.1.3375.2.2.10.11.3.1.2",
+            "ltmVirtualAddrStatClientPktsIn": "1.3.6.1.4.1.3375.2.2.10.11.3.1.3",
+            "ltmVirtualAddrStatClientBytesIn": "1.3.6.1.4.1.3375.2.2.10.11.3.1.4",
+            "ltmVirtualAddrStatClientPktsOut": "1.3.6.1.4.1.3375.2.2.10.11.3.1.5",
+            "ltmVirtualAddrStatClientBytesOut": "1.3.6.1.4.1.3375.2.2.10.11.3.1.6",
+            "ltmVirtualAddrStatClientMaxConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.8",
+            "ltmVirtualAddrStatClientCurConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.9",
+            "ltmVirtualAddrStatClientTotConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.10",
+            "ltmVirtualAddrStatPvaPktsIn": "1.3.6.1.4.1.3375.2.2.10.11.3.1.11",
+            "ltmVirtualAddrStatPvaBytesIn": "1.3.6.1.4.1.3375.2.2.10.11.3.1.12",
+            "ltmVirtualAddrStatPvaPktsOut": "1.3.6.1.4.1.3375.2.2.10.11.3.1.13",
+            "ltmVirtualAddrStatPvaBytesOut": "1.3.6.1.4.1.3375.2.2.10.11.3.1.14",
+            "ltmVirtualAddrStatPvaMaxConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.15",
+            "ltmVirtualAddrStatPvaCurConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.16",
+            "ltmVirtualAddrStatPvaTotConns": "1.3.6.1.4.1.3375.2.2.10.11.3.1.17",
+            "ltmVirtualAddrStatTotRequests": "1.3.6.1.4.1.3375.2.2.10.11.3.1.18",
+            "ltmVirtualAddrStatName": "1.3.6.1.4.1.3375.2.2.10.11.3.1.19"
+          }
+        },
+        {
+          "name": "F5BigipLocal_VirtualAddrConfig",
+          "attributes": null,
+          "values": {
+            "ltmVirtualAddrAddrType": "1.3.6.1.4.1.3375.2.2.10.10.2.1.1",
+            "ltmVirtualAddrAddr": "1.3.6.1.4.1.3375.2.2.10.10.2.1.2",
+            "ltmVirtualAddrEnabled": "1.3.6.1.4.1.3375.2.2.10.10.2.1.3",
+            "ltmVirtualAddrConnLimit": "1.3.6.1.4.1.3375.2.2.10.10.2.1.4",
+            "ltmVirtualAddrArpEnabled": "1.3.6.1.4.1.3375.2.2.10.10.2.1.5",
+            "ltmVirtualAddrNetmask": "1.3.6.1.4.1.3375.2.2.10.10.2.1.6",
+            "ltmVirtualAddrBroadcast": "1.3.6.1.4.1.3375.2.2.10.10.2.1.7",
+            "ltmVirtualAddrScope": "1.3.6.1.4.1.3375.2.2.10.10.2.1.8",
+            "ltmVirtualAddrAutoDelete": "1.3.6.1.4.1.3375.2.2.10.10.2.1.9",
+            "ltmVirtualAddrInheritedTrafficGroup": "1.3.6.1.4.1.3375.2.2.10.10.2.1.10",
+            "ltmVirtualAddrTrafficGroup": "1.3.6.1.4.1.3375.2.2.10.10.2.1.11",
+            "ltmVirtualAddrFloating": "1.3.6.1.4.1.3375.2.2.10.10.2.1.12",
+            "ltmVirtualAddrName": "1.3.6.1.4.1.3375.2.2.10.10.2.1.15"
+          }
+        },
+        {
+          "name": "F5BigipLocal_VirtualAddrStatus",
+          "attributes": null,
+          "values": {
+            "ltmVAddrStatusAddrType": "1.3.6.1.4.1.3375.2.2.10.14.2.1.1",
+            "ltmVAddrStatusAddr": "1.3.6.1.4.1.3375.2.2.10.14.2.1.2",
+            "ltmVAddrStatusAvailState": "1.3.6.1.4.1.3375.2.2.10.14.2.1.3",
+            "ltmVAddrStatusEnabledState": "1.3.6.1.4.1.3375.2.2.10.14.2.1.4",
+            "ltmVAddrStatusParentType": "1.3.6.1.4.1.3375.2.2.10.14.2.1.5",
+            "ltmVAddrStatusDetailReason": "1.3.6.1.4.1.3375.2.2.10.14.2.1.6",
+            "ltmVAddrStatusName": "1.3.6.1.4.1.3375.2.2.10.14.2.1.7"
+          }
+        },
+        {
+          "name": "F5BigipLocal_iRuleStats",
+          "attributes": null,
+          "values": {
+            "ltmRuleStatName": "1.3.6.1.4.1.3375.2.2.10.15.3.1.1",
+            "ltmRuleStatEventProcessingTime": "1.3.6.1.4.1.3375.2.2.10.15.3.1.2",
+            "ltmRuleStatTotalExecutions": "1.3.6.1.4.1.3375.2.2.10.15.3.1.3",
+            "ltmRuleStatFailures": "1.3.6.1.4.1.3375.2.2.10.15.3.1.4",
+            "ltmRuleStatAborts": "1.3.6.1.4.1.3375.2.2.10.15.3.1.5",
+            "ltmRuleStatMinCycles": "1.3.6.1.4.1.3375.2.2.10.15.3.1.6",
+            "ltmRuleStatMaxCycles": "1.3.6.1.4.1.3375.2.2.10.15.3.1.7",
+            "ltmRuleStatAvgCycles": "1.3.6.1.4.1.3375.2.2.10.15.3.1.8"
+          }
+        },
+        {
+          "name": "F5BigipLocal_MonitorStats",
+          "attributes": null,
+          "values": {
+            "ltmMonitorName": "1.3.6.1.4.1.3375.2.2.7.1.2.1.1",
+            "ltmMonitorType": "1.3.6.1.4.1.3375.2.2.7.1.2.1.2",
+            "ltmMonitorDestIpType": "1.3.6.1.4.1.3375.2.2.7.1.2.1.3",
+            "ltmMonitorDestIp": "1.3.6.1.4.1.3375.2.2.7.1.2.1.4",
+            "ltmMonitorDestPort": "1.3.6.1.4.1.3375.2.2.7.1.2.1.5",
+            "ltmMonitorInterval": "1.3.6.1.4.1.3375.2.2.7.1.2.1.6",
+            "ltmMonitorTimeout": "1.3.6.1.4.1.3375.2.2.7.1.2.1.7",
+            "ltmMonitorProbeAttempts": "1.3.6.1.4.1.3375.2.2.7.1.2.1.8",
+            "ltmMonitorProbeSuccesses": "1.3.6.1.4.1.3375.2.2.7.1.2.1.9",
+            "ltmMonitorProbeFailures": "1.3.6.1.4.1.3375.2.2.7.1.2.1.10",
+            "ltmMonitorProbeTimeouts": "1.3.6.1.4.1.3375.2.2.7.1.2.1.11",
+            "ltmMonitorTestTimeouts": "1.3.6.1.4.1.3375.2.2.7.1.2.1.12"
+          }
+        }
+      ]
+    },
+    {
+      "name": "f5gtm_dns",
+      "attributes": {
+        "poll_interval": "300"
+      },
+      "groups": [
+        {
+          "name": "F5BigipGlobal_GTMWideIPStats",
+          "attributes": null,
+          "values": {
+            "gtmWideipStatName": "1.3.6.1.4.1.3375.2.3.12.2.3.1.1",
+            "gtmWideipStatRequests": "1.3.6.1.4.1.3375.2.3.12.2.3.1.2",
+            "gtmWideipStatResolutions": "1.3.6.1.4.1.3375.2.3.12.2.3.1.3",
+            "gtmWideipStatPersisted": "1.3.6.1.4.1.3375.2.3.12.2.3.1.4",
+            "gtmWideipStatPreferred": "1.3.6.1.4.1.3375.2.3.12.2.3.1.5",
+            "gtmWideipStatAlternate": "1.3.6.1.4.1.3375.2.3.12.2.3.1.6",
+            "gtmWideipStatFallback": "1.3.6.1.4.1.3375.2.3.12.2.3.1.7",
+            "gtmWideipStatDropped": "1.3.6.1.4.1.3375.2.3.12.2.3.1.8",
+            "gtmWideipStatExplicitIp": "1.3.6.1.4.1.3375.2.3.12.2.3.1.9",
+            "gtmWideipStatReturnToDns": "1.3.6.1.4.1.3375.2.3.12.2.3.1.10"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMWideIPStatus",
+          "attributes": null,
+          "values": {
+            "gtmWideipStatusName": "1.3.6.1.4.1.3375.2.3.12.3.2.1.1",
+            "gtmWideipStatusAvailState": "1.3.6.1.4.1.3375.2.3.12.3.2.1.2",
+            "gtmWideipStatusEnabledState": "1.3.6.1.4.1.3375.2.3.12.3.2.1.3",
+            "gtmWideipStatusParentType": "1.3.6.1.4.1.3375.2.3.12.3.2.1.4",
+            "gtmWideipStatusDetailReason": "1.3.6.1.4.1.3375.2.3.12.3.2.1.5"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMPoolStats",
+          "attributes": null,
+          "values": {
+            "gtmPoolStatName": "1.3.6.1.4.1.3375.2.3.6.2.3.1.1",
+            "gtmPoolStatRequests": "1.3.6.1.4.1.3375.2.3.6.2.3.1.2",
+            "gtmPoolStatResolutions": "1.3.6.1.4.1.3375.2.3.6.2.3.1.3",
+            "gtmPoolStatPreferred": "1.3.6.1.4.1.3375.2.3.6.2.3.1.4",
+            "gtmPoolStatAlternate": "1.3.6.1.4.1.3375.2.3.6.2.3.1.5",
+            "gtmPoolStatFallback": "1.3.6.1.4.1.3375.2.3.6.2.3.1.6",
+            "gtmPoolStatDropped": "1.3.6.1.4.1.3375.2.3.6.2.3.1.7",
+            "gtmPoolStatExplicitIp": "1.3.6.1.4.1.3375.2.3.6.2.3.1.8",
+            "gtmPoolStatReturnToDns": "1.3.6.1.4.1.3375.2.3.6.2.3.1.9",
+            "gtmPoolStatReturnFromDns": "1.3.6.1.4.1.3375.2.3.6.2.3.1.10"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMServerStats",
+          "attributes": null,
+          "values": {
+            "gtmServerStatName": "1.3.6.1.4.1.3375.2.3.9.2.3.1.1",
+            "gtmServerStatUnitId": "1.3.6.1.4.1.3375.2.3.9.2.3.1.2",
+            "gtmServerStatRequests": "1.3.6.1.4.1.3375.2.3.9.2.3.1.3",
+            "gtmServerStatVsPicks": "1.3.6.1.4.1.3375.2.3.9.2.3.1.4",
+            "gtmServerStatCpuUsage": "1.3.6.1.4.1.3375.2.3.9.2.3.1.5",
+            "gtmServerStatMemAvail": "1.3.6.1.4.1.3375.2.3.9.2.3.1.6",
+            "gtmServerStatBitsPerSecIn": "1.3.6.1.4.1.3375.2.3.9.2.3.1.7",
+            "gtmServerStatBitsPerSecOut": "1.3.6.1.4.1.3375.2.3.9.2.3.1.8",
+            "gtmServerStatPktsPerSecIn": "1.3.6.1.4.1.3375.2.3.9.2.3.1.9",
+            "gtmServerStatPktsPerSecOut": "1.3.6.1.4.1.3375.2.3.9.2.3.1.10",
+            "gtmServerStatConnections": "1.3.6.1.4.1.3375.2.3.9.2.3.1.11",
+            "gtmServerStatConnRate": "1.3.6.1.4.1.3375.2.3.9.2.3.1.12"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMDataCenterStats",
+          "attributes": null,
+          "values": {
+            "gtmDataCenterStatName": "1.3.6.1.4.1.3375.2.3.3.2.3.1.1",
+            "gtmDataCenterStatRequests": "1.3.6.1.4.1.3375.2.3.3.2.3.1.2",
+            "gtmDataCenterStatResolutions": "1.3.6.1.4.1.3375.2.3.3.2.3.1.3"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMVirtualServerStats",
+          "attributes": null,
+          "values": {
+            "gtmVirtualServerStatName": "1.3.6.1.4.1.3375.2.3.11.2.3.1.1",
+            "gtmVirtualServerStatRequests": "1.3.6.1.4.1.3375.2.3.11.2.3.1.2",
+            "gtmVirtualServerStatResolutions": "1.3.6.1.4.1.3375.2.3.11.2.3.1.3"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMLinkStats",
+          "attributes": null,
+          "values": {
+            "gtmLinkStatName": "1.3.6.1.4.1.3375.2.3.5.3.3.1.1",
+            "gtmLinkStatUnitId": "1.3.6.1.4.1.3375.2.3.5.3.3.1.2",
+            "gtmLinkStatBitsPerSecIn": "1.3.6.1.4.1.3375.2.3.5.3.3.1.3",
+            "gtmLinkStatBitsPerSecOut": "1.3.6.1.4.1.3375.2.3.5.3.3.1.4",
+            "gtmLinkStatPktsPerSecIn": "1.3.6.1.4.1.3375.2.3.5.3.3.1.5",
+            "gtmLinkStatPktsPerSecOut": "1.3.6.1.4.1.3375.2.3.5.3.3.1.6",
+            "gtmLinkStatCurrentState": "1.3.6.1.4.1.3375.2.3.5.3.3.1.7",
+            "gtmLinkStatRateBpsIn": "1.3.6.1.4.1.3375.2.3.5.3.3.1.8",
+            "gtmLinkStatRateVsesIn": "1.3.6.1.4.1.3375.2.3.5.3.3.1.9",
+            "gtmLinkStatRateBpsOut": "1.3.6.1.4.1.3375.2.3.5.3.3.1.10",
+            "gtmLinkStatRateVsesOut": "1.3.6.1.4.1.3375.2.3.5.3.3.1.11"
+          }
+        },
+        {
+          "name": "F5BigipGlobal_GTMGlobalStats",
+          "attributes": null,
+          "values": {
+            "gtmGlobalStatDnssecRequests": "1.3.6.1.4.1.3375.2.3.1.2.3.1.1",
+            "gtmGlobalStatDnssecReturned": "1.3.6.1.4.1.3375.2.3.1.2.3.1.2",
+            "gtmGlobalStatRequests": "1.3.6.1.4.1.3375.2.3.1.2.3.1.3",
+            "gtmGlobalStatResolutions": "1.3.6.1.4.1.3375.2.3.1.2.3.1.4",
+            "gtmGlobalStatPreferred": "1.3.6.1.4.1.3375.2.3.1.2.3.1.5",
+            "gtmGlobalStatFallback": "1.3.6.1.4.1.3375.2.3.1.2.3.1.6",
+            "gtmGlobalStatDropped": "1.3.6.1.4.1.3375.2.3.1.2.3.1.7",
+            "gtmGlobalStatExplicitIp": "1.3.6.1.4.1.3375.2.3.1.2.3.1.8",
+            "gtmGlobalStatReturnToDns": "1.3.6.1.4.1.3375.2.3.1.2.3.1.9"
+          }
+        }
+      ]
+    }
+  ],
+  "uuid": "3993e973-ff4d-42b5-8a75-4b1109258d48",
+  "__s2_integration_name": "snmp",
+  "__s2_obj_version": "v1"
+}
